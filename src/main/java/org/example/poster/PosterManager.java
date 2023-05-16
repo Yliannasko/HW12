@@ -10,10 +10,10 @@ public class PosterManager {
 
     }
 
-    public PosterManager(int limit) {
-        this.limit = limit;
-
-    }
+//    public PosterManager(int limit) {
+//        this.limit = limit;
+//
+//    }
 
     //private String[] films = new String[0];//0 потому что изначально фильмов нет
     public void save(Poster movie) {         //добавление фильмов

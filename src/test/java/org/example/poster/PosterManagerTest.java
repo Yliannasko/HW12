@@ -61,6 +61,17 @@ public class PosterManagerTest {
     public void shouldFindLastLessLimit() {
         PosterManager manager = new PosterManager();
         manager.save(movie1);
+        manager.save(movie6);
+        manager.save(movie7);
+
+        Poster[] expected = {movie7, movie6, movie1};
+        Poster[] actual = manager.findLast();
+        Assertions.assertArrayEquals(expected, actual);
+    }
+    @Test
+    public void shouldFindEqualLimit() {
+        PosterManager manager = new PosterManager();
+        manager.save(movie1);
         manager.save(movie2);
         manager.save(movie5);
         manager.save(movie6);

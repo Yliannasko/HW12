@@ -1,13 +1,14 @@
 package org.example.poster;
+
 public class Poster {
     private String nameMovie;
     private String genre;
     private String data;
 
-    public Poster (String nameMovie, String genre, String data){
-        this.nameMovie= nameMovie;
-        this.genre=genre;
-        this.data=data;
+    public Poster(String nameMovie, String genre, String data) {
+        this.nameMovie = nameMovie;
+        this.genre = genre;
+        this.data = data;
     }
 //    public String getNameMovies(){
 //        return nameMovie;
